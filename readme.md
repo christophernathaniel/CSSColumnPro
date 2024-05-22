@@ -6,10 +6,21 @@
 - 📫 How to reach me **connect@christophernathaniel.co.uk**
 
 <h2 align="center">Get Started:</h2>
+<pre>
 <code>
-    &lt;link rel='stylesheet' type='text/css' media='screen' href='CSSGridPro.css'&gt;<br><br>
-    &lt;div class=&quot;container&quot;&gt;<br>&ensp;&ensp;&lt;div class=&quot;row&quot;&gt;<br>&ensp;&ensp;&ensp;&ensp;&lt;div class=&quot;col col-sm-2 col-4&quot;&gt;This is a test&lt;/div&gt;<br>&ensp;&ensp;&ensp;&ensp;&lt;div class=&quot;col col-sm-2 offset-4 col-4&quot;&gt;This is a second test&lt;/div&gt;<br>&ensp;&ensp;&lt;/div&gt;<br>&lt;/div&gt;
+    ### Include CSSGridPro
+    &lt;link rel='stylesheet' type='text/css' media='screen' href='CSSGridPro.css'&gt;
 </code>
+<code>
+    ### Add the HTML
+    &lt;div class=&quot;container&quot;&gt;
+    <br>&ensp;&ensp;&lt;div class=&quot;row&quot;&gt;
+    <br>&ensp;&ensp;&ensp;&ensp;&lt;div class=&quot;col col-sm-2 col-4&quot;&gt;This is a test&lt;/div&gt;
+    <br>&ensp;&ensp;&ensp;&ensp;&lt;div class=&quot;col col-sm-2 offset-4 col-4&quot;&gt;This is a second test&lt;/div&gt;
+    <br>&ensp;&ensp;&lt;/div&gt;
+    <br>&lt;/div&gt;
+</code>
+</pre>
 
 
 <h3 align="left">Connect with me:</h3>
