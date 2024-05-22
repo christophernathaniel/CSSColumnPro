@@ -1,5 +1,5 @@
 <h1 align="center">CSSColumnPro</h1>
-<h3 align="center">Website Developer & Designer</h3>
+<h3 align="center">A lightweight alternative to bootstrap</h3>
 
 - 👨‍💻 All of my projects are available at [creativenebula.co.uk](creativenebula.co.uk)
 
