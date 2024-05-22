@@ -1,12 +1,13 @@
 $columns: 12;
 $gutter: 40px;
 $container: 1600px;
-$breakpoints: (
-  'sm': 576px,
-  'md': 768px,
-  'lg': 992px,
-  'xl': 1200px
-);
+
+:root {
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+}
 
 @import 'lib/grid';
 @import 'lib/gridlines';

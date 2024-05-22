@@ -9,6 +9,16 @@
     box-sizing: border-box;
     flex-wrap: wrap;
 
+    // Reduce Grid to 6 columns on medium screens
+    @media (min-width: 567px) and (max-width: 992px) {
+        --columns: 6;
+    }
+
+    // Reduce Grid to 4 columns on small screens
+    @media (max-width: 567px) {
+        --columns: 4;
+    }
+
     span {
         outline: 1px solid red;
         margin-right: var(--gutter);
@@ -19,5 +29,10 @@
 
         margin-left: calc(var(--gutter) / 2);
         margin-right: calc(var(--gutter) / 2);
+
+    
     }
+
+  
+
 }

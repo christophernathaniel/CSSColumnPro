@@ -8,26 +8,79 @@
         margin: 0 auto;
     }
 
+      // Reduce Grid to 6 columns on medium screens
+    @media (min-width: 567px) and (max-width: 992px) {
+        --columns: 6;
+    }
+
+    // Reduce Grid to 4 columns on small screens
+    @media (max-width: 567px) {
+        --columns: 4;
+    }
+
+
     .row {
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
     }
   
+    // Mobile First Approach
+    .col {
+        width: 100%;
+        margin-left: calc(var(--gutter) / 2);
+        margin-right: calc(var(--gutter) / 2);
+    }
 
+    // Columns
     @for $i from 1 through $columns {
-        .col-#{$i} {
-            width: calc(calc(calc(100% / var(--columns)) * #{$i}) - var(--gutter));
-            margin-left: calc(var(--gutter) / 2);
-            margin-right: calc(var(--gutter) / 2);
+        // Standard Desktop Sizing
+        @media (min-width: 992px) {
+            .col-#{$i} {
+                width: calc(calc(calc(100% / var(--columns)) * #{$i}) - var(--gutter));
+            }
+        }
+
+        // Standard Tablet Sizing
+        @media (min-width: 567px) and (max-width: 992px) {
+            .col-#{$i} {
+                width: calc(calc(calc(50% / var(--columns)) * #{$i}) - var(--gutter));
+            }
+        }
+
+        // Standard Tablet Sizing (md Modifier)
+        @media (min-width: 567px) and (max-width: 992px) {
+            .col-md-#{$i} {
+                width: calc(calc(calc(100% / var(--columns)) * #{$i}) - var(--gutter));
+            }
+        }
+
+        // Standard Mobile Sizing (sm Modifier)
+        @media (max-width: 567px) {
+            .col-sm-#{$i} {
+                width: calc(calc(calc(100% / var(--columns)) * #{$i}) - var(--gutter));
+            }
+        }
+
+    }
+
+    // Offsets
+    @for $i from 1 through $columns {
+        @media (min-width: 992px) {
+            .offset-#{$i} {
+                margin-left: calc(calc(calc(calc(100% / var(--columns)) * #{$i})) + var(--gutter) / 2);
+            }
+        }
+
+        @media (min-width: 567px) and (max-width: 992px) {
+            .offset-#{$i} {
+                margin-left: calc(calc(calc(calc(50% / var(--columns)) * #{$i})) + var(--gutter) / 2);
+            }
         }
     }
 
-    @for $i from 1 through $columns {
-        .offset-#{$i} {
-            margin-left: calc(calc(calc(calc(100% / var(--columns)) * #{$i})) + var(--gutter) / 2);
-        }
-    }
+
+
 }
 
 // .col-4 {
