@@ -40,6 +40,9 @@
                 width: calc(calc(calc(100% / var(--columns)) * #{$i}) - var(--gutter));
             }
         }
+    }
+
+    @for $i from 1 through $columns {
 
         // Standard Tablet Sizing
         @media (min-width: 567px) and (max-width: 992px) {
@@ -47,6 +50,9 @@
                 width: calc(calc(calc(50% / var(--columns)) * #{$i}) - var(--gutter));
             }
         }
+    }
+
+    @for $i from 1 through $columns {
 
         // Standard Tablet Sizing (md Modifier)
         @media (min-width: 567px) and (max-width: 992px) {
@@ -54,6 +60,9 @@
                 width: calc(calc(calc(100% / var(--columns)) * #{$i}) - var(--gutter));
             }
         }
+    }
+
+    @for $i from 1 through $columns {
 
         // Standard Mobile Sizing (sm Modifier)
         @media (max-width: 567px) {
