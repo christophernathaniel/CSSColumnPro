@@ -2,7 +2,7 @@ import './CSSGridPro.scss';
 
 
 const gridMode = () => {
-    let columns = 16;
+    let columns = 12;
 
     document.querySelectorAll('.container').forEach((container) => {
         container.style.position = 'relative';

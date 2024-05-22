@@ -1,5 +1,6 @@
-$columns: 16;
-$gutter: 10px;
+$columns: 12;
+$gutter: 40px;
+$container: 1600px;
 $breakpoints: (
   'sm': 576px,
   'md': 768px,
@@ -9,3 +10,8 @@ $breakpoints: (
 
 @import 'lib/grid';
 @import 'lib/gridlines';
+
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

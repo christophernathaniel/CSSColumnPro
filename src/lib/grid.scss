@@ -1,6 +1,12 @@
 .container {
     --columns: #{$columns};
     --gutter: #{$gutter};
+    --container: #{$container};
+
+    &:not(.fluid) {
+        max-width: var(--container);
+        margin: 0 auto;
+    }
 
     .row {
         display: flex;
