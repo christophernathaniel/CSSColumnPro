@@ -8,7 +8,7 @@
         margin: 0 auto;
     }
 
-      // Reduce Grid to 6 columns on medium screens
+    // Reduce Grid to 6 columns on medium screens
     @media (min-width: 567px) and (max-width: 992px) {
         --columns: 6;
     }
@@ -17,7 +17,6 @@
     @media (max-width: 567px) {
         --columns: 4;
     }
-
 
     .row {
         display: flex;
@@ -64,7 +63,6 @@
     }
 
     @for $i from 1 through $columns {
-
         // Standard Tablet Sizing (md Modifier)
         @media (min-width: 567px) and (max-width: 992px) {
             .col-md-#{$i} {
@@ -74,14 +72,12 @@
     }
 
     @for $i from 1 through $columns {
-
         // Standard Mobile Sizing (sm Modifier)
         @media (max-width: 567px) {
             .col-sm-#{$i} {
                 width: calc(calc(calc(100% / var(--columns)) * #{$i}) - var(--gutter));
             }
         }
-
     }
 
     // Offsets
@@ -98,11 +94,4 @@
             }
         }
     }
-
-
-
 }
-
-// .col-4 {
-//     width: calc(calc(calc(100% / 16) * 4) - 10 * 4);
-// }

@@ -21,7 +21,7 @@ const gridMode = () => {
 
     document.querySelectorAll('.col').forEach((col) => {
         col.style.position = 'relative';
-        col.style.outline = '2px solid #000';
+        col.style.outline = '3px solid #000';
         col.style.boxSizing = 'border-box';
     });
 
