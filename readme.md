@@ -1,10 +1,9 @@
 <h1 align="center">CSSColumnPro</h1>
 <h3 align="center">A lightweight alternative to bootstrap</h3>
 
-<p>Grid System Example: [https://creativenebula.co.uk/grid/dist/index.html](https://creativenebula.co.uk/grid/dist/index.html)
-- 👨‍💻 All of my projects are available at [https://creativenebula.co.uk](https://creativenebula.co.uk)
-
-- 📫 How to reach me **connect@christophernathaniel.co.uk**
+<p align="center">Grid System Example: https://creativenebula.co.uk/grid/dist/index.html</p><br><br><br>
+- 👨‍💻 All of my projects are available at https://creativenebula.co.uk<br>
+- 📫 How to reach me connect@christophernathaniel.co.uk
 
 <h2 align="center">Get Started:</h2>
 <pre>
