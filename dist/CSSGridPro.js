@@ -1,0 +1,1 @@
+document.querySelectorAll(".grid").forEach((t=>{const e=t.getAttribute("data-cols"),r=t.getAttribute("data-gap");t.style.gridTemplateColumns=`repeat(${e}, 1fr)`,t.style.gridGap=r}));

@@ -1,0 +1,23 @@
+.grid-lines {
+    --columns: #{$columns};
+    --gutter: #{$gutter};
+   
+    position: absolute;
+    inset: 0;
+    display: flex;
+    min-height: 400px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    span {
+        outline: 1px solid red;
+        margin-right: var(--gutter);
+       
+        display: block;
+        width: calc(calc(100% / var(--columns)) - calc(var(--gutter)));
+        background-color: rgba(0,0,0,0.05);
+
+        margin-left: calc(var(--gutter) / 2);
+        margin-right: calc(var(--gutter) / 2);
+    }
+}
