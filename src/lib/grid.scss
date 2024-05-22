@@ -27,9 +27,20 @@
   
     // Mobile First Approach
     .col {
-        width: 100%;
         margin-left: calc(var(--gutter) / 2);
         margin-right: calc(var(--gutter) / 2);
+
+        // If not any additional column options
+        &:not([class*='col-']) {
+            @media (min-width: 567px) {
+                flex: 1 0;
+            }
+        }
+
+        // If mobile, make full width
+        @media (max-width: 567px) {
+            width: 100%;
+        }
     }
 
     // Columns

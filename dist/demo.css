@@ -1,0 +1,7 @@
+.col {
+    margin-bottom: 20px;
+    background-color: rgba(244,244,244,0.9);
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 2;
+}
